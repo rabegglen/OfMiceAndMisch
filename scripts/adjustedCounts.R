@@ -12,5 +12,5 @@ Data %>%
 ## for this we need to group by cage
 
 Data %>% 
-  group_by(CageNumber) %>% 
-  count(AnimalsInCage, Resource, Behaviour)
+  group_by(CageNumber, AnimalsInCage) %>% 
+  count(Resource, Behaviour)
