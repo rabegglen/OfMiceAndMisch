@@ -21,6 +21,7 @@ pacman :: p_load(
   lubridate,
   randomNames,
   openxlsx,
+  data.table,
   install = TRUE
 )
 
