@@ -39,7 +39,7 @@ Data = list.files('./data', full.names = TRUE) %>%
   mutate(
     Date = as.Date(Date), # I'd strongly advise to actually use the date format, if you're working with dates
     Time = as.character(Time), # Parsing the time
-    Time = strftime(Time, '%H:%M%:%S') # Parsing the time
+    Time = strftime(Time, '%H:%M%:%S'), # Parsing the time
   )
 
 
